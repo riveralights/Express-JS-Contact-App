@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-4">
+        <h2>Tambah Contact Baru</h2>
+        <hr>
+        <!-- Alert Errors -->
+        <% if(typeof errors != 'undefined') { %>
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    <% errors.forEach(error => { %>
+                     <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } %>
+        <!-- End Errors -->
+        <div class="card">
+            <div class="card-body">
+                <form action="/contact" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Nama</label>
+                        <input type="text" name="nama" id="nama" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone</label>
+                        <input type="text" name="phone" id="phone" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Tambah Data</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
