@@ -1,5 +1,9 @@
 # Express JS - Contact App
-Repo ini merupakan hasil latihan dari Series NodeJS di Web Programming Unpas.
+Contact App ini merupakan hasil latihan dari Series NodeJS di Web Programming Unpas dilengkapi dengan Flash Message dan Validasi pada form nya. Adapun struktur yang membangun aplikasi ini antara lain
+- NodeJS
+- ExpressJS
+- Layouting dengan EJS 
+- Bootstrap 5
 
 # Prasyarat
 Ada beberapa syarat untuk menggunakan repository ini
